@@ -1,0 +1,122 @@
+/* Define que todos os elementos terão o box-sizing como border-box,
+   garantindo que padding e bordas sejam incluídos no tamanho total do elemento */
+* {
+    box-shadow: border-box;
+}
+
+/* Estilização geral do corpo da página */
+body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    font-family: Material+Symbols+Outlined, sans-serif; /* Define a fonte padrão */
+    background: #eeee; /* Define a cor de fundo */
+}
+
+/* Estilização do título principal */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 3rem; /* Define o tamanho da fonte */
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex; /* Define um layout flexível */
+    flex-flow: row-wrap; /* Permite que os itens sejam organizados em linha e quebras de linha */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    width: 90%; /* Define a largura do cabeçalho */
+    margin: auto auto; /* Centraliza o cabeçalho horizontalmente */
+    /* border: 1px solid red; */ /* Comentado: usado para depuração */
+}
+
+/* Estilização do campo de entrada */
+input {
+    height: 120px; /* Altura do campo */
+    font-size: 2rem; /* Tamanho da fonte */
+    width: 80%; /* Largura do campo */
+    padding-left: 10%; /* Espaçamento interno à esquerda */
+}
+
+/* Estilização do botão de adicionar */
+button.add {
+    width: 20%; /* Largura do botão */
+    cursor: pointer; /* Define o cursor como "mão" ao passar sobre o botão */
+    background: green; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    border: none; /* Remove bordas */
+    height: 125px; /* Altura do botão */
+    border-top-right-radius: 10px; /* Arredonda o canto superior direito */
+    border-bottom-right-radius: 10px; /* Arredonda o canto inferior direito */
+}
+
+/* Estilização da área principal onde as tarefas serão listadas */
+main {
+    display: flex; /* Define um layout flexível */
+    flex-flow: row wrap; /* Permite que os itens sejam organizados em linha e quebras de linha */
+    width: 90%; /* Define a largura da área */
+    margin: auto auto; /* Centraliza horizontalmente */
+    padding-top: 40px; /* Espaçamento superior */
+    /* border: 1px solid blue; */ /* Comentado: usado para depuração */
+}
+
+/* Estilização de cada item da lista de tarefas */
+.item {
+    display: flex; /* Define um layout flexível */
+    flex-flow: row wrap; /* Permite que os itens sejam organizados em linha e quebras de linha */
+    justify-items: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    background: white; /* Cor de fundo */
+    height: 110px; /* Altura do item */
+    width: 100%; /* Largura do item */
+    box-shadow: 0 0 2opx #ccc; /* Sombra ao redor do item */
+    margin-bottom: 2%; /* Espaçamento inferior entre os itens */
+    cursor: pointer; /* Define o cursor como "mão" ao passar sobre o item */
+}
+
+/* Estilização de itens marcados como concluídos */
+.item.clicado {
+    background: #d4f6d9; /* Cor de fundo para itens concluídos */
+}
+
+/* Estilização do nome de itens concluídos */
+.item.clicado .item-nome {
+    text-decoration: line-through; /* Adiciona um traço no texto */
+    color: grey; /* Altera a cor do texto */
+}
+
+/* Estilização do ícone de cada item */
+.item-icone {
+    flex: 10%; /* Define a proporção de espaço ocupado */
+    /* border: 1px solid orange; */ /* Comentado: usado para depuração */
+    text-align: center; /* Centraliza o ícone */
+    font-size: 2rem; /* Define o tamanho do ícone */
+}
+
+/* Estilização do nome de cada item */
+.item-nome {
+    flex: 55%; /* Define a proporção de espaço ocupado */
+    /* border: 1px solid red; */ /* Comentado: usado para depuração */
+    font-size: 30px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilização do botão de apagar */
+.item-botao {
+    flex: 15%; /* Define a proporção de espaço ocupado */
+    /* border: 1px solid green; */ /* Comentado: usado para depuração */
+}
+
+/* Estilização do botão de apagar dentro de cada item */
+.delete {
+    background: red; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove bordas */
+    padding: 10px; /* Espaçamento interno */
+    height: 110px; /* Altura do botão */
+    width: 100%; /* Largura do botão */
+}
+
+/* Estilização do ícone de tarefa concluída */
+.mdi-check-circle {
+    color: green; /* Define a cor do ícone */
+}
